@@ -21,9 +21,9 @@ public class fetchData extends AsyncTask<Void,Void,Void> {
     String update_date_time,local_new_cases,local_total_cases,local_total_number_of_individuals_in_hospitals,local_deaths,local_new_deaths,local_recovered,local_active_cases,total_pcr_testing_count;
     @Override
     protected Void doInBackground(Void... voids) {
-        //https://www.hpb.health.gov.lk/api/get-current-statistical
+        
         try {
-            URL url = new URL("https://www.hpb.health.gov.lk/api/get-current-statistical");
+            URL url = new URL("X");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             InputStream inputStream = httpURLConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
